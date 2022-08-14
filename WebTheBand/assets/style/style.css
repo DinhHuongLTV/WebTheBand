@@ -1,0 +1,62 @@
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* làm từ ngoài vào trong
+   làm từ trên xuống dưới
+   từ tổng quan đến chi tiết */
+
+/* tự đặt và trả lời các câu hỏi: 
+1. vị trí?
+2. kích thước: chiều rộng, chiều cao bao nhiêu?
+3. màu sắc?
+4. kiểu dáng: hình tròn, vuông, chữ chéo, nghiêng ????
+ */
+
+#main_container {}
+
+#header {
+    height: 47px;
+    background-color: #000;
+}
+
+#header #nav {}
+
+#header #nav li {
+    display: inline-block;
+    transition: 0.5s;
+}
+
+
+#header #nav li a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 24px;
+    line-height: 47px;
+    /*cũng làm tăng kích thước của thẻ hiện tại bị css*/
+    transition: 0.5s;
+}
+
+#header #nav li:hover a {
+    color: #000 !important;
+    background-color: #ccc !important;
+}
+
+#header #nav .subnav {
+    display: none;
+}
+
+#slider {}
+
+#content {}
+
+#footer {}
