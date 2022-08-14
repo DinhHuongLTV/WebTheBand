@@ -32,30 +32,56 @@ html {
 #header #nav li {
     display: inline-block;
     transition: 0.5s;
+    position: relative;
 }
 
-
+/*  */
 #header #nav li a {
     display: inline-block;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     padding: 0 24px;
+    /*line height cũng làm tăng kích thước của thẻ có display khác inline chưa được set height có height bằng với giá trị */
     line-height: 47px;
-    /*cũng làm tăng kích thước của thẻ hiện tại bị css*/
     transition: 0.5s;
+}
+
+#header #nav li .subnav {
+    display: none;
 }
 
 #header #nav li:hover a {
     color: #000 !important;
-    background-color: #ccc !important;
+    background-color: #ccc;
 }
 
-#header #nav .subnav {
-    display: none;
+/* làm phần ẩn hiện trên website thì cứ làm trước cho nó hiện đẹp đã rồi ẩn sau */
+
+#header #nav li:hover .subnav {
+    display: block;
+    position: absolute;
+    box-shadow: 0px 0px 10px 1px rgba(31, 29, 29, 0.4);
 }
 
-#slider {}
+#header #nav li .subnav li a {
+    background-color: #fff;
+    width: 160px;
+    padding-right: 20px;
+    text-transform: capitalize;
+}
+
+#header #nav li .subnav li a:hover {
+    background-color: #ccc;
+}
+
+
+/* Slide */
+
+#slider {
+    min-height: 500px;
+    background-color: #333;
+}
 
 #content {}
 
