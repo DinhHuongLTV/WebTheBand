@@ -67,17 +67,6 @@ html {
     line-height: 1.4;
 }
 
-.section-btn {
-    display: inline-block;
-    text-decoration: none;
-    border: none;
-    height: 47px;
-    text-align: center;
-    background-color: #000;
-    cursor: pointer;
-
-}
-
 .plr-medium {
     padding: 0 16px;
 }
@@ -258,8 +247,6 @@ html {
     margin-top: 15px;
     padding: 32px 0;
 }
-
-#content .member-infor {}
 
 #content .member-name {
     text-transform: capitalize;
