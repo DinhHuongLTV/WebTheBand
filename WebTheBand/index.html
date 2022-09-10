@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 
@@ -26,34 +30,306 @@
 
     <!-- 
         Phân tích dự dán: web the band, tìm ra các thành phần của website đó
-        1. header
+        1. header - done
         2. slider
         3. content: about, tour, contact, banner
         4. footer
       -->
     <div id="main_container">
         <div id="header">
+            <!-- ! Begin: nav -->
             <ul id="nav">
-                <li><a href="">home</a></li>
-                <li><a href="">band</a></li>
-                <li><a href="">tour</a></li>
-                <li><a href="">contact</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#content">band</a></li>
+                <li><a href="#tour-date">tour</a></li>
+                <li><a href="#contact">contact</a></li>
                 <li>
-                    <a href="">
-                        more
-                    </a>
                     <ul class="subnav">
-                        <li><a href="">merchandise</a></li>
-                        <li><a href="">extras</a></li>
-                        <li><a href="">media</a></li>
+                        <li><a href="#">merchandise</a></li>
+                        <li><a href="#">extras</a></li>
+                        <li><a href="#">media</a></li>
                     </ul>
+                    <a href="#">
+                        more
+                        <i class="fas fa-sort-down"></i>
+                    </a>
                 </li>
             </ul>
+
+            <!-- <div id="nav dropdown-active">
+                <a href="" class="nav-link section-btn plr-large text-white text-bold text-uppercase fz-medium">home</a>
+                <a href="" class="nav-link section-btn plr-large text-white text-bold text-uppercase fz-medium">band</a>
+                <a href="" class="nav-link section-btn plr-large text-white text-bold text-uppercase fz-medium">tour</a>
+                <a href=""
+                    class="nav-link section-btn plr-large text-white text-bold text-uppercase fz-medium">contact</a>
+
+                <div class="nav-link dropdown-hover">
+                    <button class="section-btn plr-large text-white text-bold fz-medium text-uppercase">
+                        more
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+
+                    <div class="dropdown-content">
+                        <a href="" class="dropdown-item text-white text-bold fz-medium">Merchandise</a>
+                        <a href="" class="dropdown-item text-white text-bold fz-medium">Extras</a>
+                        <a href="" class="dropdown-item text-white text-bold fz-medium">Media</a>
+                    </div>
+                </div>
+
+            </div> -->
+            <!-- * End: nav -->
+
+            <!-- ! Begin: searching button -->
+            <div class="searching fz-medium search-icon">
+                <i class="fas fa-search header-icon "></i>
+            </div>
+            <div class="searching fz-medium bar-icon">
+                <i class="fas fa-bars header-icon "></i>
+            </div>
+            <!-- * End: searching button -->
+
         </div>
-        <div id="slider"></div>
-        <div id="content"></div>
-        <div id="footer"></div>
+
+        <!-- ! Begin: silder -->
+        <div id="slider">
+            <div class="text-content">
+                <h2 class="text-head text-center fz-large">New York</h2>
+                <p class="text-desciption text-center mt-25">The atmosphere in New York is lorem ipsum.</p>
+            </div>
+        </div>
+
+        <!-- * End: slider -->
+
+        <!-- !begin: content -->
+        <div id="content">
+            <div class="about content-container">
+                <h2 class="section-header text-center text-uppercase fz-large">THE BAND</h2>
+                <p class="section-slogan text-center fz-medium mt-25">We love music</p>
+                <p class="section-descrition fz-medium mt-25">We have created a fictional band website. Lorem ipsum
+                    dolor sit
+                    amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <div class="member-container">
+                    <div class="member-infor">
+                        <p class="member-name fz-medium text-center">name</p>
+                        <img class="member-img" src="./assets/img/member/bandmember.jpg" alt="">
+                    </div>
+                    <div class="member-infor">
+                        <p class="member-name fz-medium text-center">name</p>
+                        <img class="member-img" src="./assets/img/member/bandmember.jpg" alt="">
+                    </div>
+                    <div class="member-infor">
+                        <p class="member-name fz-medium text-center">name</p>
+                        <img class="member-img" src="./assets/img/member/bandmember.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- !begin: tour date -->
+        <div id="tour-date">
+            <div class="content-container">
+                <h2 class="section-header tour-date-heading text-center text-uppercase fz-large">TOUR DATES</h2>
+                <p class="section-slogan tour-date-slogan text-center fz-medium mt-25">Remember to book your tickets!
+                </p>
+                <div class="ticket-infor">
+                    <div class="infor-item fz-medium ">
+                        <span class="infor-date">Sebtember</span>
+                        <span class="status">Sold out</span>
+                    </div>
+                    <div class="infor-item fz-medium ">
+                        <span class="infor-date">October</span>
+                        <span class="status">Sold out</span>
+                    </div>
+                    <div class="infor-item fz-medium ">
+                        <span class="infor-date">November</span>
+                        <span class="infor-quantity">3</span>
+                    </div>
+                </div>
+
+                <div class="ticket-booking">
+
+                    <div class="ticket-item">
+                        <div class="ticket-img newyork"></div>
+                        <div class="ticket-item-infor">
+                            <h3 class="ticket-location">New York</h3>
+                            <p class="ticket-date">Fri 27 Nov 2016</p>
+                            <p class="ticket-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="ticket-buying fz-medium js-buy-ticket">Buy tickets</button>
+                        </div>
+                    </div>
+
+                    <div class="ticket-item">
+                        <div class="ticket-img paris"></div>
+                        <div class="ticket-item-infor">
+                            <h3 class="ticket-location">Paris</h3>
+                            <p class="ticket-date">Sat 28 Nov 2016</p>
+                            <p class="ticket-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="ticket-buying fz-medium js-buy-ticket">Buy tickets</button>
+                        </div>
+                    </div>
+
+                    <div class="ticket-item">
+                        <div class="ticket-img sanfran"></div>
+                        <div class="ticket-item-infor">
+                            <h3 class="ticket-location">San Francisco</h3>
+                            <p class="ticket-date">Sat 29 Nov 2016</p>
+                            <p class="ticket-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="ticket-buying fz-medium js-buy-ticket">Buy tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- !begin contact form -->
+        <div id="contact">
+            <div class="content-container mt-20">
+
+                <h2 class="section-header text-center text-uppercase fz-large">contact</h2>
+                <p class="section-slogan text-center fz-medium mt-25">Fan? Drop a note</p>
+
+                <div class="contact-container">
+
+                    <div class="contact-infor">
+                        <span><i class="fas fa-map-marker-alt contact-icon"></i> Chicago, US</span> <br>
+                        <span><i class="fas fa-phone contact-icon"></i> Phone: +00 151515</span> <br>
+                        <span><i class="fas fa-envelope contact-icon"></i> Email: mail@mail.com</span>
+                    </div>
+
+                    <form action="" class="contact-form">
+                        <div class="contact-form-row">
+                            <input type="text" class="contact-name" placeholder="Name" required>
+                            <input type="text" class="contact-email" placeholder="Email" required>
+                            <input type="text" class="contact-message" placeholder="Address" required>
+                        </div>
+                        <div class="contact-submit">
+                            <button class="submit-btn">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- ! map -->
+        <div class="map"></div>
+
+
+        <!-- !footer -->
+        <div id="footer" class="content-container text-center">
+            <i class="fz-large fab fa-facebook-square"></i>
+            <i class="fz-large fab fa-instagram"></i>
+            <i class="fz-large fab fa-snapchat"></i>
+            <i class="fz-large fab fa-pinterest-p"></i>
+            <i class="fz-large fab fa-twitter"></i>
+            <i class="fz-large fab fa-linkedin-in"></i>
+            <p class="mt-20">Powered by w3.css</p>
+        </div>
     </div>
+
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="close-btn js-close-btn"><i class="fas fa-times"></i></div>
+
+            <header class="modal-header">
+                <i class="fas fa-suitcase modal-icon"></i>
+                Tickets
+            </header>
+
+            <div class="modal-body">
+                <label for="quantity" class="modal-label">
+                    <i class="fas fa-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" placeholder="How many?" class="modal-input" id="quantity">
+
+                <label for="user-email" class="modal-label">
+                    <i class="fas fa-user"></i>
+                    Send to
+                </label>
+                <input type="email" placeholder="Enter email" class="modal-input" id="user-email">
+
+                <button href="#" id="buy" class="text-uppercase">
+                    Pay
+                    <i class="fas fa-check"></i>
+                </button>
+            </div>
+
+            <footer id="footer">
+                <p class="modal-help">Need <a href="">helps</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket');
+        const modal = document.querySelector('.js-modal');
+        const closeBtn = document.querySelector('.js-close-btn');
+        const modalContainer = document.querySelector('.js-modal-container');
+
+
+        // hàm hiển thị modal (thêm class open vào thẻ div modal)
+        const showBuyTickets = () => {
+            modal.classList.add('open');
+        };
+
+        // hàm ẩn modal (xóa bỏ class open ở thẻ div modal)
+        const hideBuyTickets = () => {
+            modal.classList.remove('open');
+        };
+
+        // lặp qua các thẻ btn và lắng nghe hành vi click
+        for (btn of buyBtns) {
+            btn.addEventListener('click', showBuyTickets);
+        }
+
+        // nghe hành vi click ở close btn
+        closeBtn.addEventListener('click', hideBuyTickets);
+        // tính chất nổi bọt của hành vi: khi tạo ra hành vi click của thẻ con, hành vi click đó có thể lắng nghe được sự kiện từ những thẻ cha
+        modal.addEventListener('click', hideBuyTickets);
+
+        // Loại bỏ hành vi nổi bọt
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation();
+        })
+    </script>
+
+    <!-- meunu dropdown mobile responsive -->
+    <script>
+        let header = document.querySelector('#header');
+        let hamburgerBTN = document.querySelector('.bar-icon');
+        let currentHeight = header.clientHeight;
+
+        // set header's height form fixed to auto
+        hamburgerBTN.addEventListener('click', function () {
+            let headerH = header.clientHeight;
+            if (headerH == currentHeight) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = `${currentHeight}px`;
+            }
+        });
+
+        // auto closing dropdown when clicked
+        let dropdownLink = document.querySelectorAll("#header #nav li a[href*='#']");
+        dropdownLink.forEach((element) => {
+            // console.log(element.nextElementSibling); 
+            let isDropdownMenu = element.nextElementSibling && element.nextElementSibling.classList.contains('subnav');
+            element.addEventListener('click', function () {
+                if (!isDropdownMenu) {
+                    header.style.height = `${currentHeight}px`;
+                }
+            });
+        })
+
+
+    </script>
 </body>
 
 </html>
