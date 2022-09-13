@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
 /* reset css */
 * {
     padding: 0;
@@ -6,7 +11,7 @@
 }
 
 html {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Lato, Helvetica, Arial, sans-serif;
 }
 
 /* !Begin: common content css */
@@ -21,7 +26,7 @@ html {
 }
 
 .fz-large {
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .fz-medium {
@@ -46,6 +51,10 @@ html {
 
 .mt-20 {
     margin-top: 20px;
+}
+
+.mt-16 {
+    margin-top: 16px;
 }
 
 .mt-25 {
@@ -79,20 +88,9 @@ html {
     display: inline-block;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0px 0px 10px 1px rgba(31, 29, 29, 0.4);
-}
 
-.dropdown-item {
-    display: block;
-    padding: 12px 12px;
-    width: 160px;
-    color: black;
-    text-decoration: none;
-}
+
+
 
 /* *End: Common content css */
 
@@ -115,7 +113,6 @@ html {
     background-color: #000;
     width: 100%;
     height: 47px;
-    overflow: hidden;
     z-index: 1;
 }
 
@@ -143,7 +140,6 @@ html {
     position: absolute;
     top: 100%;
     left: 0%;
-    z-index: 99;
 }
 
 #header #nav li:hover a {
@@ -244,7 +240,6 @@ html {
 #content .member-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 15px;
     padding: 32px 0;
 }
 
@@ -273,7 +268,6 @@ html {
 
 #tour-date .ticket-infor {
     background-color: #fff;
-    margin-top: 40px
 }
 
 #tour-date .ticket-item-infor {
@@ -306,7 +300,6 @@ html {
 }
 
 #tour-date .ticket-booking {
-    margin-top: 32px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 16px;
@@ -343,7 +336,7 @@ html {
 }
 
 #tour-date .ticket-buying {
-    padding: 8px 16px;
+    padding: 12px 20px;
     background-color: black;
     color: white;
     margin-bottom: 15px;
@@ -520,14 +513,3 @@ html {
         opacity: 1;
     }
 }
-
-.dropdown-hover:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-hover:hover button {
-    background-color: white;
-    color: black;
-}
-
-@media screen and (min-width: 740) {}

@@ -1,0 +1,88 @@
+@media(min-width: 1024px) {}
+
+@media(max-width: 1023px) and (min-width: 741px) {}
+
+/* !mobile responsive */
+@media(max-width: 740px) {
+    #header {
+        overflow: hidden;
+    }
+
+    /* Turn menu vertical align to horizontal align */
+    #header #nav li {
+        display: block;
+    }
+
+    #header #nav>li:first-child {
+        display: inline-block;
+    }
+
+    #header #nav li a {
+        width: 100%;
+    }
+
+    #header #nav .subnav {
+        position: initial !important;
+        background-color: #333 !important;
+    }
+
+    /*  hide search-icon */
+    #header .search-icon {
+        display: none;
+    }
+
+    #header .bar-icon {
+        display: inline-block;
+    }
+
+    /* !banner - slider */
+    #slider {
+        padding-top: 90%;
+    }
+
+    /*! member */
+    .member-container {
+        display: block !important;
+    }
+
+    .member-infor:first-child,
+    .member-infor:nth-child(2) {
+        margin-bottom: 40px;
+    }
+
+    .member-name {
+        font-size: 125%;
+    }
+
+    .member-img {
+        display: block;
+        margin: 0 auto;
+        width: 60% !important;
+        height: 60% !important
+    }
+
+    /* ! Ticket */
+    .ticket-booking {
+        display: block !important;
+    }
+
+    .ticket-buying {
+        width: 100% !important;
+    }
+
+    /* ! contact */
+    .contact-container {
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    #contact .contact-form .submit-btn {
+        padding: 12px 20px;
+        width: 100%;
+    }
+
+    #contact .contact-name,
+    #contact .contact-email {
+        grid-column: 1/3;
+    }
+}
