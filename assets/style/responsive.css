@@ -1,6 +1,21 @@
 @media(min-width: 1024px) {}
 
-@media(max-width: 1023px) and (min-width: 741px) {}
+@media(max-width: 1023px) and (min-width: 741px) {
+    #contact .contact-infor {
+        /* line height is an inherit attribute */
+        line-height: 2;
+    }
+}
+
+@media(max-width: 1023px) {
+    #contact .contact-form input {
+        padding: 14px 12px;
+    }
+
+    #contact .contact-form .submit-btn {
+        padding: 16px 20px;
+    }
+}
 
 /* !mobile responsive */
 @media(max-width: 740px) {
@@ -77,7 +92,6 @@
     }
 
     #contact .contact-form .submit-btn {
-        padding: 12px 20px;
         width: 100%;
     }
 

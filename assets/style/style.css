@@ -210,7 +210,7 @@ html {
 
     /* div tự kế thừa chiều ngang, chiếm toàn bộ chiều ngang của thẻ chứa nó */
     width: 100%;
-    background: url(/assets/img/slider/chicago.jpg) top center / cover no-repeat;
+    background: url(../img/slider/chicago.jpg) top center / cover no-repeat;
 }
 
 #slider .text-content {
